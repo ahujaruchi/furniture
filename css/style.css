@@ -11269,7 +11269,6 @@ h5,
   margin: 0 auto;
   position: relative;
   z-index: 0;
-  bordeR: 1px solid #674c27;
 }
 
 .services .icon span {
@@ -11277,6 +11276,8 @@ h5,
   color: #1d150b;
   z-index: 1;
 }
+
+.services .icon span img{width:100px; height: auto;}
 
 .services h3 {
   font-size: 18px;
