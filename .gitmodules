@@ -1,0 +1,11 @@
+# Remove the submodule entry from .git/config
+git submodule deinit -f vendor/phpmailer/phpmailer
+
+# Remove the submodule directory from the index
+git rm -f vendor/phpmailer/phpmailer
+
+# Remove any leftover metadata
+rm -rf .git/modules/vendor/phpmailer/phpmailer
+
+# Commit the changes
+git commit -m "Removed broken submodule phpmailer"
