@@ -291,7 +291,7 @@
 	$('.appointment_time').timepicker();
 
 
-
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 })(jQuery);
 
