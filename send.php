@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get and sanitize form data
     $firstName = htmlspecialchars($_POST['firstName']);
     $lastName = htmlspecialchars($_POST['lastName']);
-    $email = 'ahuja.ruchi94@gmail.com'; 
+    $email = 'info@viraasat.net'; 
     $mobileNo = htmlspecialchars($_POST['phoneNo']);
     $message = htmlspecialchars($_POST['message']);
 
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Recipient email address
-    $to = "ahuja.ruchi94@gmail.com"; 
+    $to = "info@viraasat.net"; 
 
     // Email subject
     $subject = "Form Submission from Your Website";
@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP(); 
         $mail->Host = 'smtp.gmail.com'; // Use your email provider's SMTP host
         $mail->SMTPAuth = true; 
-        $mail->Username = 'ahuja.ruchi94@gmail.com'; // Use your full email address
+        $mail->Username = 'info@viraasat.net'; // Use your full email address
         $mail->Password = 'lgef vvuf muvn yuac'; // Use your generated App Password for Gmail
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // or PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 587; // or 465 for SMTPS
